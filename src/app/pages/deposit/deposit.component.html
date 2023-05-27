@@ -1,0 +1,29 @@
+<div class="deposit">
+    <div class="deposit_wrap">
+        <div class="deposit_header">
+            <span class="balance">Balance </span>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="currency_rupee"></mat-icon> <span>1200</span>
+        </div>
+        <div class="deposit_body">
+            <h3>Deposit Amount</h3>
+            <form [formGroup]="withdrawData" (ngSubmit)="rtfFunction(withdrawData.value)">
+                <select name="rtfWebsite" id="" formControlName="rtfWebsite">
+                    <option value="">Select ID</option>
+                    <option [value]="list.website" *ngFor="let list of listData">{{ list.website }}</option>
+                </select>
+                <div class="text-red text-right" *ngIf="withdrawData.get('rtfWebsite').invalid && withdrawData.get('rtfWebsite').touched">
+                    <p *ngIf="withdrawData.get('rtfWebsite').errors?.required">Invalid Website</p>
+                </div>
+                <br>
+                <input type="number" placeholder="Enter Amount" name="rtfAmount" formControlName="rtfAmount">
+                <div class="text-red text-right" *ngIf="withdrawData.get('rtfAmount').invalid && withdrawData.get('rtfAmount').touched">
+                    <p *ngIf="withdrawData.get('rtfAmount').errors?.required">Invalid Amount</p>
+                </div>
+                <p class="small"> *Minimum deposit amount is  500 coins </p>
+                <div style="text-align: center;">
+                    <button mat-raised-button class="button_primary">Deposit Amount</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

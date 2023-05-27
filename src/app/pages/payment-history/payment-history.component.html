@@ -1,0 +1,48 @@
+<div class="payment_history">
+
+    <mat-tab-group>
+        <mat-tab label="Passbook"> 
+            <div *ngFor="let h of getPhistory" class="passbook">
+                <!-- <div class="passbook_wrap">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Abd33223232</h3>
+                            <span>05-02-2323 may</span><span>/</span><span>UPI</span>
+                        </div>
+                        <div class="col_3">
+                            <h5>230</h5>
+                            <span class="status">Pending</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                
+                <div class="passbook_wrap">
+                    <div class="header"><span>UTR: {{h.utr}} </span><span class="amount">{{h.amount}}</span></div>
+                    <hr>
+                    <div class="row body_h">
+                        <div class="col_5">
+                            <span>Date</span>
+                            <h5>{{ h.date }}</h5>
+                        </div>
+                        <div class="col_3">
+                            <span>Type</span>
+                            <h5>{{ h.payment_type }}</h5>
+                        </div>
+                        <div class="col_2_stau">
+                            <span class="status">{{h.status}}</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </mat-tab>
+        <mat-tab label="Bet History">
+            <div class="whats_sup_body">
+                <mat-icon>sports_cricket</mat-icon>
+            <p>You don't any bet history yet.</p>
+        </div>
+        </mat-tab>
+        
+    </mat-tab-group>
+</div>

@@ -1,0 +1,32 @@
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #1182b0;
+    color: white;
+    z-index: 9;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+li {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    text-align: center;
+    font-size: 13px;
+    justify-content: center;
+    cursor: pointer;
+}
+li .mat-icon{
+    text-align: center;
+    width: 100%;
+}

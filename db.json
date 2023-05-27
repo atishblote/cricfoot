@@ -1,0 +1,364 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 100,
+      "username": "admin",
+      "password": "admin@123",
+      "current_balance": 1200
+    },
+    {
+      "id": 101,
+      "username": "866867314",
+      "password": "admin123",
+      "current_balance": 1000
+    },
+    {
+      "username": 8668767314,
+      "password": "Atishloi",
+      "current_balance": 1200,
+      "id": 102
+    },
+    {
+      "username": 9665673166,
+      "password": "Atuusbhs",
+      "current_balance": 1200,
+      "id": 103
+    }
+  ],
+  "create_id": [
+    {
+      "id": 201,
+      "name": "Asia Exchange",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1682948542746_445346_HCJKXGNYCMZUHFFWBVCVVCBZS.jpeg",
+      "website": "asiaexchange.com",
+      "min_rifil": 500,
+      "min_withdraw": 500,
+      "min_maintain_bal": 0,
+      "max_withdraw": "Unlimited",
+      "detail_id": 301
+    },
+    {
+      "id": 202,
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1682074967347_591492_AFBAWPCVKETRSKNHZHYYSMXUZ.png",
+      "name": "Go cric9",
+      "website": "gocric9.com",
+      "min_rifil": 500,
+      "min_withdraw": 500,
+      "min_maintain_bal": 0,
+      "max_withdraw": "Unlimited",
+      "detail_id": 302
+    },
+    {
+      "id": 203,
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1669610269564_716610_VUSUTCTQQCDJHNFTCJGJFPSCS.jpeg",
+      "name": "Go Exchange 9",
+      "website": "goexch9.com",
+      "min_rifil": 500,
+      "min_withdraw": 500,
+      "min_maintain_bal": 0,
+      "max_withdraw": "Unlimited",
+      "detail_id": 303
+    },
+    {
+      "id": 204,
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1669636422807_974671_GWNKXWCRSMZZNCYFSRPZPSSBT.jpeg",
+      "name": "Go Exchange 247",
+      "website": "goexch247.com",
+      "min_rifil": 500,
+      "min_withdraw": 500,
+      "min_maintain_bal": 0,
+      "max_withdraw": "Unlimited",
+      "detail_id": 304
+    },
+    {
+      "id": 205,
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1669636457179_521296_WVQSVGSBJAACXGNFECETJNACX.jpeg",
+      "name": "Go Exchange 365",
+      "website": "goexch365.com",
+      "min_rifil": 500,
+      "min_withdraw": 500,
+      "min_maintain_bal": 0,
+      "max_withdraw": "Unlimited",
+      "detail_id": 305
+    },
+    {
+      "id": 206,
+      "img_url": "https://ss.gopunt.com/go-punt/account/1662375761025_327351_TPHFDNTARJZXCAJUTENBVYJDZ.png",
+      "name": "Exch999",
+      "website": "exch999.com",
+      "min_rifil": 500,
+      "min_withdraw": 500,
+      "min_maintain_bal": 0,
+      "max_withdraw": "Unlimited",
+      "detail_id": 306
+    },
+    {
+      "id": 207,
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1669636435212_162098_BUTDDSKSBTSUNMPKJTWDTBRGU.jpeg",
+      "name": "Go Exchange 777",
+      "website": "goexch777.com",
+      "min_rifil": 500,
+      "min_withdraw": 500,
+      "min_maintain_bal": 0,
+      "max_withdraw": "Unlimited",
+      "detail_id": 307
+    }
+  ],
+  "create_id_payment_details": [
+    {
+      "id": 401,
+      "username": "samir",
+      "amount": 120,
+      "date": "2023/00/00",
+      "utr": "Adb3223232",
+      "userid": "866867314",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1669636435212_162098_BUTDDSKSBTSUNMPKJTWDTBRGU.jpeg",
+      "name": "Go Exchange 777",
+      "website": "goexch777.com"
+    },
+    {
+      "username": "atish",
+      "amount": 120,
+      "utr": "ABC121354",
+      "website": "goexch9.com",
+      "name": "Go Exchange 9",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1669610269564_716610_VUSUTCTQQCDJHNFTCJGJFPSCS.jpeg",
+      "date": "2023/01/01",
+      "userid": "admin",
+      "id": 402
+    },
+    {
+      "username": "Atish",
+      "amount": 120,
+      "utr": "ABC121354123",
+      "website": "goexch9.com",
+      "name": "Go Exchange 9",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1669610269564_716610_VUSUTCTQQCDJHNFTCJGJFPSCS.jpeg",
+      "date": "2023/01/01",
+      "userid": "admin",
+      "id": 403
+    },
+    {
+      "username": "Atish",
+      "amount": 120,
+      "utr": "ABC121354",
+      "website": "goexch9.com",
+      "name": "Go Exchange 9",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1669610269564_716610_VUSUTCTQQCDJHNFTCJGJFPSCS.jpeg",
+      "date": "2023/01/01",
+      "userid": "admin",
+      "id": 404
+    },
+    {
+      "username": "Atish",
+      "amount": 200,
+      "utr": "ABC12315465465",
+      "website": "goexch9.com",
+      "name": "Go Exchange 9",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1669610269564_716610_VUSUTCTQQCDJHNFTCJGJFPSCS.jpeg",
+      "date": "2023/01/01",
+      "userid": "admin",
+      "id": 405
+    },
+    {
+      "username": "atish",
+      "amount": 210,
+      "utr": "ABC121354123",
+      "website": "goexch9.com",
+      "name": "Go Exchange 9",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1669610269564_716610_VUSUTCTQQCDJHNFTCJGJFPSCS.jpeg",
+      "date": "2023/01/01",
+      "userid": "admin",
+      "id": 406
+    },
+    {
+      "username": "Atish",
+      "amount": 10,
+      "utr": "ABC323121",
+      "website": "goexch9.com",
+      "name": "Go Exchange 9",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1669610269564_716610_VUSUTCTQQCDJHNFTCJGJFPSCS.jpeg",
+      "date": "2023/01/01",
+      "userid": "admin",
+      "id": 407
+    },
+    {
+      "username": "Atish",
+      "amount": 1200,
+      "utr": "ABCDH1545",
+      "website": "goexch777.com",
+      "name": "Go Exchange 777",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1669636435212_162098_BUTDDSKSBTSUNMPKJTWDTBRGU.jpeg",
+      "date": "2023/01/01",
+      "userid": "admin",
+      "id": 408
+    },
+    {
+      "username": "Atish",
+      "amount": 1200,
+      "utr": "ABCDH1545",
+      "website": "goexch777.com",
+      "name": "Go Exchange 777",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1669636435212_162098_BUTDDSKSBTSUNMPKJTWDTBRGU.jpeg",
+      "date": "2023/01/01",
+      "userid": "admin",
+      "id": 409
+    },
+    {
+      "username": "atish",
+      "amount": 1100,
+      "utr": "ABCD123131",
+      "website": "goexch777.com",
+      "name": "Go Exchange 777",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1669636435212_162098_BUTDDSKSBTSUNMPKJTWDTBRGU.jpeg",
+      "date": "2023/01/01",
+      "userid": "admin",
+      "id": 410
+    },
+    {
+      "username": "atish",
+      "amount": 1100,
+      "utr": "ABCD123131",
+      "website": "goexch777.com",
+      "name": "Go Exchange 777",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1669636435212_162098_BUTDDSKSBTSUNMPKJTWDTBRGU.jpeg",
+      "date": "2023/01/01",
+      "userid": "admin",
+      "id": 411
+    },
+    {
+      "username": "goionis",
+      "amount": 2001,
+      "utr": "ABC121354",
+      "website": "gocric9.com",
+      "name": "Go cric9",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1682074967347_591492_AFBAWPCVKETRSKNHZHYYSMXUZ.png",
+      "date": "2023/01/01",
+      "userid": "admin",
+      "id": 412
+    },
+    {
+      "username": "atish1213",
+      "amount": 500,
+      "utr": "ABC121354123",
+      "website": "asiaexchange.com",
+      "name": "Asia Exchange",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1682948542746_445346_HCJKXGNYCMZUHFFWBVCVVCBZS.jpeg",
+      "date": "2023/01/01",
+      "userid": "admin",
+      "id": 413
+    },
+    {
+      "username": "sadsa",
+      "amount": 120,
+      "utr": "ABC12315465465",
+      "website": "asiaexchange.com",
+      "name": "Asia Exchange",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1682948542746_445346_HCJKXGNYCMZUHFFWBVCVVCBZS.jpeg",
+      "date": "2023/01/01",
+      "userid": "admin",
+      "id": 414
+    },
+    {
+      "username": "asiatest",
+      "amount": 500,
+      "utr": "123546789",
+      "website": "asiaexchange.com",
+      "name": "Asia Exchange",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1682948542746_445346_HCJKXGNYCMZUHFFWBVCVVCBZS.jpeg",
+      "date": "2023/01/01",
+      "userid": "admin",
+      "id": 415
+    },
+    {
+      "username": "Goatish",
+      "amount": 5000,
+      "utr": "ABC2121212",
+      "website": "gocric9.com",
+      "name": "Go cric9",
+      "img_url": "https://ss.gopunt.com/go-punt/uploads/accounts/1682074967347_591492_AFBAWPCVKETRSKNHZHYYSMXUZ.png",
+      "date": "2023/01/01",
+      "userid": "admin",
+      "id": 416
+    }
+  ],
+  "payment_history": [
+    {
+      "id": 501,
+      "amount": "2000",
+      "utr": "ABD1212121",
+      "payment_type": "UPI",
+      "date": "2023/00/00",
+      "status": "Pending"
+    },
+    {
+      "amount": "1200",
+      "utr": "ABC121354123",
+      "payment_type": "upi",
+      "date": "2023-05-12T10:47:24.608Z",
+      "status": "Pending",
+      "id": 502
+    },
+    {
+      "amount": "1200",
+      "utr": "ABC121354123",
+      "payment_type": "qr",
+      "date": "2023-05-12T12:25:26.200Z",
+      "status": "Pending",
+      "id": 503
+    },
+    {
+      "amount": "999",
+      "utr": "ABC12315465465",
+      "payment_type": "bank",
+      "date": "2023-05-12T13:53:26.822Z",
+      "status": "Pending",
+      "id": 504
+    },
+    {
+      "amount": "1200",
+      "utr": "ABC121354",
+      "payment_type": "qr",
+      "date": "2023-05-13T08:07:55.981Z",
+      "status": "Pending",
+      "id": 505
+    },
+    {
+      "amount": "509",
+      "utr": "ABC12315465465",
+      "payment_type": "upi",
+      "date": "2023-05-13T09:02:40.435Z",
+      "status": "Pending",
+      "id": 506
+    }
+  ],
+  "add_bank": [
+    {
+      "bank_name": "BOI Bank",
+      "IFSC": "BOI123",
+      "account": 1121212121221212,
+      "is_available": "yes",
+      "id": 1
+    }
+  ],
+  "signup": [
+    {}
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

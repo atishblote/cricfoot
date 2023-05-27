@@ -1,0 +1,47 @@
+<section class="login_page">
+    <div class="containers">
+        <div class="login_body">
+            <div class="login_inner_wrap">
+                <div class="row">
+                    <div class="col">
+                        <div class="login_left">
+                            <img [src]="imgUrl" alt="">
+                        </div>
+                    </div>
+                    <div class="col bg_img">
+                        <div class="login_right">
+                            <div class="logo">
+                                <img [src]="logoUrl" alt="">
+                                <h2>Create Account</h2>
+                                <p></p>
+                            </div>
+                            <form [formGroup]="signUpData"  (ngSubmit)="rtfFunction(signUpData.value)">
+                                
+                                <input type="number" placeholder="Mobile number" name="number" formControlName="number"><br>
+                                <div class="text-red text-right" *ngIf="signUpData.get('number').invalid && signUpData.get('number').touched">
+                                    <p *ngIf="signUpData.get('number').errors?.required">Number is Required</p>
+                                    <p *ngIf="signUpData.get('number').errors?.pattern">10 Digit Number</p>
+                                  </div>
+                                <input type="text" placeholder="Password" name="password" formControlName="password" ><br>
+                                <div class="text-red text-right" *ngIf="signUpData.get('password').invalid && signUpData.get('password').touched">
+                                    <p *ngIf="signUpData.get('password').errors?.required">password is Required</p>
+                                    <p *ngIf="signUpData.get('password').errors?.pattern">1 Uppercase, 8 letter required</p>
+                                </div>
+                                <input type="password" placeholder="Confirm Password" name="cpassword" formControlName="cpassword" ><br>
+                                <div class="checkbox">
+                                    <span>
+                                        <input type="checkbox" name="" id="login_checkbox"><label for="login_checkbox">All details correct?</label>
+                                    </span>
+                                    <!-- <span><a href="#" target="_blank" rel="noopener noreferrer">Forget Password?</a></span> -->
+                                </div>
+                                <button mat-raised-button color="primary" [disabled]="signUpData.invalid" type="submit">SIGN UP</button>
+                            </form>
+
+                            <p  class="create_account_p">I have account <span class="link_item" routerLink="../login"> Sign In</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

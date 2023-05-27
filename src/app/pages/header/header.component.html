@@ -1,0 +1,34 @@
+
+<mat-drawer-container class="example-container" color="primary" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <div class="p_1">
+        <div>
+          <p>Navigation menu</p>
+        <ul>
+          <li routerLink="home" class="active"><mat-icon aria-hidden="false" aria-label="Example dashboard_customize icon" fontIcon="dashboard_customize"></mat-icon>Dashboard</li>
+          <li routerLink="withdraw-account"><mat-icon aria-hidden="false" aria-label="Example dashboard_customize icon" fontIcon="account_balance_wallet"></mat-icon>Withdraw</li>
+          <li routerLink="deposit-account"><mat-icon aria-hidden="false" aria-label="Example dashboard_customize icon" fontIcon="dashboard_customize"></mat-icon>Deposit</li>
+          <li routerLink="create-id"><mat-icon aria-hidden="false" aria-label="Example dashboard_customize icon" fontIcon="speaker"></mat-icon>Create ID</li>
+          <li><mat-icon aria-hidden="false" aria-label="Example dashboard_customize icon" fontIcon="receipt_long"></mat-icon>Statement</li>
+        </ul>
+        </div>
+        <div style="margin-top: 50px;">
+          <p>More options</p>
+          <ul>
+            <li class=""><mat-icon aria-hidden="false" aria-label="Example dashboard_customize icon" fontIcon="person"></mat-icon>Profile</li>
+            <li><mat-icon aria-hidden="false" aria-label="Example dashboard_customize icon" fontIcon="edit_note"></mat-icon>Terms</li>
+            <li><mat-icon aria-hidden="false" aria-label="Example dashboard_customize icon" fontIcon="help_clinic"></mat-icon>Help</li>
+            <li (click)="openDialog()"><mat-icon aria-hidden="false" aria-label="Example dashboard_customize icon" fontIcon="logout"></mat-icon>LogOut</li>
+          </ul>
+        </div>
+        
+      </div>
+    </mat-drawer>
+    <div class="toggle_button_body">
+      <button class="toggle_button" (click)="drawer.toggle()"><i class="fa fa-align-right" aria-hidden="true"></i></button>
+      <!-- <button type="button" class="toggle_button" color="primary" mat-button (click)="drawer.toggle()">
+         <i class="fa fa-align-right" aria-hidden="true"></i>
+      </button> -->
+    </div>
+  
+  </mat-drawer-container>

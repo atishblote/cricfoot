@@ -1,0 +1,28 @@
+<div class="deposit">
+    <div class="deposit_wrap">
+        <div class="deposit_header">
+            <!-- <span class="balance">Balance </span> -->
+            <span>Add Bank</span>
+        </div>
+        <div class="deposit_body">
+            <h3>Add Bank</h3>
+            <form  #myForm="ngForm" (ngSubmit)="submitBankData(myForm.value)">
+                <!-- <select name="selected_id" id="">
+                    <option value="">Select ID</option>
+                </select> -->
+                <input type="text" placeholder="HDFC Bank" name="bank_name" ngModel>
+                <br>
+                <input type="number" placeholder="Account number" name="account" ngModel>
+                <br>
+                <input type="text" placeholder="IFSC Code" name="ifsc" ngModel>
+                
+                <p *ngIf="status; else elseBlock" class="text_red">Fill the all details</p>
+                <ng-template #elseBlock><p class="small">*Check All the details correctly.</p> </ng-template>
+                <div style="text-align: center;">
+                    <button mat-raised-button type="submit" class="button_primary" >Add Bank</button>
+                </div>
+                <button mat-button color="accent" type="reset" >Reset</button>
+            </form>
+        </div>
+    </div>
+</div>

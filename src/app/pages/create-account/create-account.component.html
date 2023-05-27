@@ -1,0 +1,203 @@
+<div class="stepper_form">
+    <form [formGroup]="firstFormGroup" #myForm="ngForm" (ngSubmit)="submitCreateID(myForm.value)">
+        <mat-stepper>
+            <!-- first -->
+            <mat-step>
+                <ng-template matStepLabel>
+                    Details
+                </ng-template>
+                <div *ngIf="empData?.id" class="website_details">
+                    <img src="{{empData.img_url}}" alt=""><br>
+                    <h3>{{ empData.name }}</h3>
+                    <a>{{ empData.website }}</a>
+                    <table>
+                        <tbody>
+
+                            <tr>
+                                <td>Min Refil</td>
+                                <td>{{ empData.min_rifil }}</td>
+                            </tr>
+                            <tr>
+                                <td>Min Withdraw</td>
+                                <td>{{ empData.min_withdraw }}</td>
+                            </tr>
+                            <tr>
+                                <td>Min Maintain Balance</td>
+                                <td>{{ empData.min_maintain_bal }}</td>
+                            </tr>
+                            <tr>
+                                <td>Max Withdraw</td>
+                                <td>{{ empData.max_withdraw}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="step_body">
+
+                    <input type="text" name="username" formControlName="username" placeholder="Username"><br>
+                    <div class="text-red text-right"
+                        *ngIf="firstFormGroup.get('username').invalid && firstFormGroup.get('username').touched">
+                        <span *ngIf="firstFormGroup.get('username').errors?.required"> Username is invalid</span>
+                    </div>
+                    <input type="number" name="amount" formControlName="amount" placeholder="More than 500">
+                    <div class="text-red text-right"
+                        *ngIf="firstFormGroup.get('amount').invalid && firstFormGroup.get('amount').touched">
+                        <span *ngIf="firstFormGroup.get('amount').errors?.required">Amount is invalid</span>
+                    </div>
+                    <br>
+
+                </div>
+                <div class="step_3_btn">
+                    <span></span>
+                    <span></span>
+                    <span><button mat-button matStepperNext type="button">Next</button></span>
+                </div>
+            </mat-step>
+
+            <!-- second -->
+            <mat-step>
+                <ng-template matStepLabel>
+                    Payment
+                </ng-template>
+                <!-- <mat-label>Name</mat-label> -->
+                <div class="step_body">
+                    <mat-accordion class="example-headers-align">
+                        <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title> <mat-icon>qr_code_2</mat-icon> OR Code </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <div class="payment_body">
+                                <div class="row">
+                                    <div class="col">
+                                        <img [src]="qrCodeUrl" alt="">
+                                    </div>
+                                    <div class="col disp_name">
+                                        <span>Display name:</span>
+                                        <label for="">Admin hai mera nam</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <mat-action-row>
+                                <button mat-button color="primary" (click)="nextStep()">Or via UPI</button>
+                            </mat-action-row>
+                        </mat-expansion-panel>
+
+                        <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title> <mat-icon>sensor_occupied</mat-icon> UPI Payment </mat-panel-title>
+                            </mat-expansion-panel-header>
+
+                            <div class="payment_body">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Model</td>
+                                            <td><img [src]="phonePayUrl" alt="" width="20"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td>Admin Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td>UPI ID</td>
+                                            <td>atish@upi</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <mat-action-row>
+                                <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                                <button mat-button color="primary" (click)="nextStep()">or Via Bank</button>
+                            </mat-action-row>
+                        </mat-expansion-panel>
+
+                        <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title> <mat-icon>account_balance</mat-icon> Bank Details </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <div class="payment_body">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Bank Name</td>
+                                            <td>HDFC Bank</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Account number</td>
+                                            <td>50200079413018</td>
+                                        </tr>
+                                        <tr>
+                                            <td>IFSC Code</td>
+                                            <td>HDFC0000466</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td>Admin Name</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <mat-action-row>
+                                <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                                <button mat-button color="primary" (click)="nextStep()">End</button>
+                            </mat-action-row>
+                        </mat-expansion-panel>
+
+                    </mat-accordion>
+
+                </div>
+
+                <div class="payment_sec">
+                    <label for="">Upload Payment screen shot</label>
+                    <input type="file" required><br>
+                    <input type="text" formControlName="utr" name="utr" placeholder="UTR number" required>
+                    <!-- <input type="text" formControlName="website" [value]="showWebsite" name="website"  >{{ empData.website }}
+                <input type="text" formControlName="name" value="{{showName}}" name="name"  >
+                <input type="text" formControlName="img_url" [value]="showImg_url" name="img_url"  >{{empData.img_url}} -->
+                    <div class="text-red text-right"
+                        *ngIf="firstFormGroup.get('utr').invalid && firstFormGroup.get('utr').touched">
+                        <span *ngIf="firstFormGroup.get('utr').errors?.required">utr is invalid</span>
+                    </div>
+                </div>
+                <p class="tip">Tip: select only one payment methode </p>
+                <div class="step_3_btn">
+                    <span><button mat-button matStepperPrevious>Back</button></span>
+                    <span><button mat-flat-button class="button_primary" type="submit">Submit</button></span>
+                    <span><button *ngIf="responceStatus" mat-button matStepperNext type="button">Check
+                            Status</button></span>
+
+                </div>
+            </mat-step>
+            <!-- third -->
+            <mat-step>
+                <ng-template matStepLabel>
+                    Done
+                </ng-template>
+
+                <div *ngIf="resData.utr != ''; else elseBlock" class="step_body_res">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="verified"></mat-icon>
+                    <h2>{{ resData.name }}</h2>
+                    <h6>Amount</h6>
+                    <p class="p_amount">{{ resData.amount }}</p>
+                    UTR
+                    <p class="p_utr">{{ resData.utr }}</p>
+                </div>
+                <ng-template #elseBlock>
+                    <p class="error">Complete Process first !!</p>
+                </ng-template>
+
+                <div class="step_3_btn">
+                    <span><button mat-button matStepperPrevious>Back</button></span>
+                    <span></span>
+                    <span><button mat-flat-button type="button" class="button_primary">Goto ID's</button></span>
+                </div>
+
+
+            </mat-step>
+
+        </mat-stepper>
+
+    </form>
+</div>

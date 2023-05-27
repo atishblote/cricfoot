@@ -1,0 +1,104 @@
+.login_page {
+    background-color: #e8eaf6;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login_body {
+    border-radius: 10px;
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.bg_img{
+    background: url('../../../assets/img/login_bg.webp');
+    background-position: center;
+    background-size: cover;
+}
+.login_body {
+    width: 920px;
+    margin: 0 auto;
+}
+
+.login_left {
+    background: #1565c0;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.login_right {
+    background: #ffffff94;
+    padding: 50px 85px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 57px;
+    padding-bottom: 18px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 0px;
+    font-size: 26px;
+}
+
+p {
+
+    margin: 0px;
+    margin-bottom: 24px;
+    padding: 0px 0px;
+}
+
+input[type="text"] , input[type="password"] {
+    width: 93%;
+    padding: 9px;
+    margin-bottom: 10px;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #d5e4e7;
+    background: #ffffff8c;
+}
+.col_4 {
+    width: 40%;
+}
+button.mdc-button.mdc-button--raised.mat-mdc-raised-button.mat-primary.mat-mdc-button-base {
+    width: 100%;
+}
+.checkbox {
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 21px;
+}
+ .checkbox span:first-child{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+input:focus-visible {
+    border: 1px solid #1182b0 !important;
+    outline: none !important;
+}
+.create_account_p{
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+@media screen and (max-width: 768px){
+    .login_right{
+        padding: 50px 27px;
+    }
+    .login_inner_wrap .row .col:first-child{
+        display: none;
+    }
+    .login_body{
+        width: 320px;
+    }
+}

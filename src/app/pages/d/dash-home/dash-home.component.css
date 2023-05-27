@@ -1,0 +1,252 @@
+/* d_home */
+.bg_blue {
+    background: #1182b0;
+    padding: 60px;
+  }
+
+.d_home_inner {
+    padding: 0px 15px;
+}
+.create_id {
+    background: #f0f0f0;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 45px;
+    font-size: 15px;
+    box-shadow: 0px 0px 12px #b6b6b63b;
+    column-gap: 10px;
+    justify-content: space-between;
+}
+.banner_image img {
+    width: 100%;
+}
+.whats_sup_body {
+    padding: 16px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px #82bad036;
+    text-align: center;
+}
+.whats_sup_body a {
+  padding: 9px;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  background: white;
+  width: 183px;
+  margin: 0 auto;
+  border-radius: 38px;
+  /* color: #3f51b5; */
+  font-size: 15px;
+  column-gap: 8px;
+  text-decoration: none;
+  border: 1px solid #8b9fa73d;
+}
+.items {
+  width: 100%;
+  /* padding: 10px; */
+  border-radius: 5px 5px 0px 0px;
+  margin-right:17px;
+  color: white;
+  background: #1999cd;
+  border-radius: 5px 5px 0px 0px;
+  /* box-shadow: 0px 00px 1px gray; */
+  margin-top: 11px;
+  /* padding: 13px 18px; */
+  position: relative;
+  box-shadow: rgb(149 157 165 / 23%) 0px 8px 24px;
+}
+.header_list {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(45deg, #16749c, #56bde9);
+  border-bottom: 1px solid #cdcdcd;
+  padding: 0px 10px;
+  align-items: center;
+  border-radius: 5px 5px 0px 0px;
+}
+.link{
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+.item_body img {
+  padding: 5px;
+  background: white;
+  border-radius: 63px;
+  width: 45px;
+}
+.item_body {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 10px;
+  padding: 13px 18px;
+}
+.item_body h6{
+  font-size: 15px;
+  color: black;
+}
+.item_body p{
+  margin: 5px 0px;
+}
+span.dot {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.d_flex_space{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.footer_list button {
+  width: 50%;
+  padding: 9px;
+  background: white;
+  border: 0px;
+}
+.footer_list .depo mat-icon{
+  color:green;
+  font-size: 17px;
+  margin-bottom: -10px;
+} 
+.footer_list .with mat-icon{
+  color: red;
+  font-size: 17px;
+  margin-bottom: -10px;
+} 
+.d_flex_space mat-icon{
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  color: #d7bcbc;
+}
+.name mat-icon {
+  color: #d8d8d8;
+  font-size: 19px;
+}
+.name{
+  display: flex;
+  column-gap: 7px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 300;
+}
+.spacer {
+  height: 2px;
+}
+
+.d_flex_space button {
+  display: flex;
+  column-gap: 4px;
+  border: 0px;
+  background: transparent;
+  color: #282828;
+}
+.craete_id_list mat-icon {
+  background: #0e8cbf;
+  color: white;
+  border-radius: 13px;
+  padding: 2px;
+  margin-top: -3px;
+}
+
+
+
+
+
+  .d__banner_section {
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .d__banner_section span {
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 5px gray;
+    border-radius: 4px;
+  }
+  .d__banner_section span:nth-child(2) {
+    transform: scale(1.3);
+  }
+  .d__banner_section img {
+    width: 50px;
+  }
+  h4.balance {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ff4081;
+  }
+  .balance .mat-icon {
+    font-size: 18px;
+    margin-top: 2px;
+  }
+  .d__banner_section p {
+    font-size: 9px;
+    color: #7a7e80;
+    font-weight: 500;
+  }
+  .deposit{
+    margin-right: 12px;
+  }
+  .withdraw{
+    margin-left: 12px;
+  }
+  .deposit mat-icon, .withdraw mat-icon {
+    font-size: 57px;
+    width: auto;
+    height: auto;
+    color: #1182b0;
+    font-weight: 600;
+  }
+  h6 {
+    margin: 0;
+  }
+  
+  /* Animation property */
+  .deposit {
+    animation: wiggle 2s linear infinite;
+  }
+  
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+
+@media screen and (max-width: 768px){
+    .bg_blue {
+        background: #1182b0;
+        padding: 40px 10px;
+    }
+    .d__banner_section span {
+        padding: 12px;
+      }
+     
+}

@@ -1,0 +1,29 @@
+<div class="deposit">
+    <div class="deposit_wrap">
+        <div class="deposit_header">
+            <span class="balance">Balance </span>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="currency_rupee"></mat-icon> <span>1200</span>
+        </div>
+        <div class="deposit_body">
+            <h3>Deposit to  Wallet</h3>
+        
+                
+                
+                <input type="number" placeholder="Enter Amount" #depositAmount >
+                <p *ngIf="status"    class="small text_warning">Need more than 500 Rs </p>
+                <br>
+                <select name="payment_type" id="" #paymentType>
+                    <option value="qr">OR Code</option>
+                    <option value="upi">UPI Payment</option>
+                    <option value="bank">Bank Transfer</option>
+                </select>
+                <p  lass="small"> *Minimum deposit amount is  500 coins </p>
+                <div style="text-align: center;">
+                    <button mat-raised-button class="button_primary" (click)="depositAmountFunc(depositAmount.value, paymentType.value)">Go to Payment</button>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- <app-payment-method [pData]="data"></app-payment-method> -->

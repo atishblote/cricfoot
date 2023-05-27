@@ -1,0 +1,89 @@
+.example-spacer {
+    flex: 1 auto;
+  }
+  mat-drawer.mat-drawer.example-sidenav {
+    visibility: visible !important;
+    display: block !important; 
+}
+  .mat-drawer-content {
+    margin-left: 0px !important;
+}
+.example-container {
+    height: 100vh;
+    position: fixed;
+}
+mat-sidenav {
+    width: 400px;
+  }
+  .mat-drawer.mat-drawer-side {
+    z-index: 2;
+    background: #1182b0;
+} 
+.toggle_button {
+  background: #ff4081 !important;
+  color: white !important;
+  border-radius: 0px 20px 20px 0px;
+  /* width: 10px !important; */
+  z-index: 99999 !important;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li i{
+  margin-right: 5px;
+  font-size: 17px;
+  color: #00709d;
+}
+li{
+  text-decoration: none;
+  margin: 10px 0px;
+  padding: 9px 20px;
+  display: flex;
+  border-radius: 8px;
+  font-size: 14px;
+  column-gap: 10px;
+  color: white;
+  font-weight: 400;
+}
+.p_1{
+  padding: 0.8rem;
+}
+li.active{
+  background: white;
+  color: black;
+}
+ul li:hover mat-icon{
+  color: black;
+
+}
+ul li:hover{
+  color: white;
+  
+}
+.active:hover{
+  color: black !important;
+}
+.toggle_button_body {
+  margin-right: -100px;
+  z-index: 999999;
+  position: fixed;
+}
+button.toggle_button {
+  outline: none;
+  border: 0px;
+  padding: 4px 9px;
+  margin-top: 61px;
+  font-size: 20px;
+  border-radius: 0px 5px 5px 0px;
+  box-shadow: 0px 0px 10px #f44336;
+  border: 1px solid #e4e4e4;
+}
+
+
+@media screen and (max-width:768px){
+  button.toggle_button{
+    margin-top: 12px !important;
+  }
+}

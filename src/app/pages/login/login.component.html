@@ -1,0 +1,38 @@
+<section class="login_page">
+    <div class="containers">
+        <div class="login_body">
+            <div class="login_inner_wrap">
+                <div class="row">
+                    <div class="col">
+                        <div class="login_left">
+                            <img [src]="imgUrl" alt="">
+                        </div>
+                    </div>
+                    <div class="col bg_img">
+                        <div class="login_right">
+                            <div class="logo">
+                                <img [src]="logoUrl" alt="">
+                                <h2>Hello Again</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, mollitia.</p>
+                            </div>
+                            <form>
+                                
+                                <input type="text" placeholder="Username or mobile" name="uname" [(ngModel)]="uname"><br>
+                                <input type="password" placeholder="Password" name="userpass"  [(ngModel)]="userpass"><br>
+                                <div class="checkbox">
+                                    <span>
+                                        <input type="checkbox" name="" id="login_checkbox"><label for="login_checkbox">Remenber Me</label>
+                                    </span>
+                                    <span><a href="#" target="_blank" rel="noopener noreferrer">Forget Password?</a></span>
+                                </div>
+                                <button mat-raised-button color="primary" (click)="getSignUpDetails()">LOGIN</button>
+                            </form>
+
+                            <p  class="create_account_p">I don't have account yet? <span class="link_item" routerLink="../sign-up"> SignUp</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

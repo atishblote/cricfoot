@@ -1,0 +1,10 @@
+section.pnf {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    flex-direction: column;
+    max-width: 228px;
+    margin: 0 auto;
+    /* position: fixed; */
+}

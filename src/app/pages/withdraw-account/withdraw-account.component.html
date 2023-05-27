@@ -1,0 +1,52 @@
+<div class="withdraw_account">
+
+    <div *ngIf="isBank; else elseBlock">
+       
+        <div class="deposit">
+            <div class="deposit_wrap">
+                <div class="deposit_header">
+                    <span class="balance"> Balance </span> 
+                    <span> 1200</span>
+                </div>
+                <div class="deposit_body">
+                    <h3>Withdraw Amount</h3>
+                    <form  #myForm="ngForm" (ngSubmit)="withDrawAccount(myForm.value)">
+                        <!-- <select name="selected_id" id="">
+                            <option value="">Select ID</option>
+                        </select> -->
+                
+                        <input type="number" placeholder="Enter Amount" name="ammount" ngModel>
+                        <div *ngIf="statusAmount" class="error">
+                            <p>Balance is insufficiat</p>
+                        </div>
+                        <br>
+                        <select  name="bank_name" id=""  ngModel>
+                            <option value="">Select Bank</option>
+                            <option *ngFor="let b of bankList"  [value]="b.bank_name" >{{ b.bank_name }}</option>
+                        </select>
+                        
+                        <p *ngIf="status; else elseBlock" class="text_red">Fill the all details</p>
+                        <ng-template #elseBlock><p class="small">*Check All the details correctly.</p> </ng-template>
+                        <div style="text-align: center;">
+                            <button mat-raised-button type="submit" class="button_primary" >Withdraw Amount</button>
+                        </div>
+                        <button mat-button color="accent" type="reset" >Reset</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #elseBlock>
+        <div class="whats_sup_body">
+            <mat-icon>account_balance</mat-icon>
+            <p>you don't have any account yet.</p>
+            <button routerLink="/dashboard/add-bank" mat-button color="primary">Add Bank
+                <mat-icon>add</mat-icon></button>
+        </div>
+    </ng-template>
+</div>
+<!-- 
+
+<button mat-stroked-button (click)="openSnackBar('Item deleted')" aria-label="Show an example snack-bar">
+  Pizza party
+</button> -->

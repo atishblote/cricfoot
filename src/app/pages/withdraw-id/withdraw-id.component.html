@@ -1,0 +1,29 @@
+<div class="deposit">
+    <div class="deposit_wrap">
+        <div class="deposit_header">
+            <span class="balance">Balance </span>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="currency_rupee"></mat-icon> <span>{{amountB}}</span>
+        </div>
+        <div class="deposit_body">
+            <h3>Withdraw Amount</h3>
+            <p>{{wName}}</p>
+            <form [formGroup]="withdrawData" (ngSubmit)="rtfFunction(withdrawData.value)">
+                <input type="number" placeholder="Enter Amount" name="rtfAmount" formControlName="rtfAmount"  (keyup)="changeFun()">
+                <div class="text-red text-right" *ngIf="withdrawData.get('rtfAmount').invalid && withdrawData.get('rtfAmount').touched">
+                    <p *ngIf="withdrawData.get('rtfAmount').errors?.required">Invalid Amount</p>
+                    
+                </div>
+                <div class="text-red text-right">
+                    <p *ngIf="checkBalance">Insufficial amount</p>
+                </div>
+                <p class="small"> *Minimum withdraw amount is  50 </p>
+                <div style="text-align: center;">
+                    <button mat-raised-button type="submit" [disabled]="withdrawData.invalid" class="button_primary">Withdraw Amount</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+  

@@ -1,0 +1,88 @@
+<div class="bg_blue">
+    <div class="d__banner_section">
+        <span class="deposit">
+            <h6>Deposit</h6>
+            <mat-icon routerLink="../deposit" aria-hidden="false" aria-label="Example home icon"
+                fontIcon="keyboard_double_arrow_down"></mat-icon>
+        </span>
+        <span>
+            <img [src]="logoUrl" alt=""><br>
+            <p>WALLET BALANCE</p>
+            <h4 class="balance"><mat-icon aria-hidden="false" aria-label="Example currency_rupee icon"
+                    fontIcon="currency_rupee"></mat-icon> 120</h4>
+        </span>
+        <span class="withdraw">
+            <h6>Withdraw</h6>
+            <mat-icon routerLink="../withdraw" aria-hidden="false" aria-label="Example home icon"
+                fontIcon="keyboard_double_arrow_up"></mat-icon>
+        </span>
+    </div>
+</div>
+
+<section class="d_home_section">
+    <div class="banner_image">
+        <img [src]="dasBanner" alt="">
+    </div>
+    <div class="d_home_inner">
+        <p>ID's</p>
+        <div class="example-button-container create_id" *ngIf="false">
+            <span>Create ID</span>
+            <button routerLink="../create-id" mat-mini-fab class="button_primary"
+                aria-label="Example icon button with a add icon">
+                <mat-icon>add</mat-icon>
+            </button>
+        </div>
+
+        <div class="create_id_list">
+           <div class="d_flex_space">
+              <span><button  routerLink="../create-id" class="craete_id_list">create id <mat-icon>add</mat-icon></button></span>
+              <span><button  routerLink="../create-id"> View all <mat-icon style="color: #1182b0;">arrow_right</mat-icon></button></span>
+           </div>
+            <div class="create_id_wrap">
+                
+                <div  class="items">
+                    <span class="dot"><mat-icon>more_vert</mat-icon></span>
+                <div class="item_body">
+                    <span>
+                        <img [src]="imgurl" width="40" alt="">
+                    </span>
+                    <span style="width: 67%;">
+                        <span class="link">{{ website }} </span>
+                        <p class="spacer"></p>
+                        <div class="d_flex_space">
+                            <span class="name"><mat-icon>person</mat-icon> {{username}}</span>
+                            <span class="copy"><mat-icon>content_copy</mat-icon></span>
+                        </div>
+                        <div class="d_flex_space">
+                            <span class="name"><mat-icon>key</mat-icon> atish12</span>
+                            <span class="copy"><mat-icon>content_copy</mat-icon></span>
+                        </div>
+                        
+                    </span>
+                </div>
+                <div class="footer_list">
+                    <button routerLink="../withdraw/{{id}}" class="with"><mat-icon>north</mat-icon>Withdraw</button>
+                    <button routerLink="../withdraw/{{id}}" class="depo"><mat-icon>south</mat-icon>Deposit</button>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    <br>
+    <div class="d_home_inner">
+        <p>Support </p>
+        <div class="whats_sup_body">
+            <a href="https://wa.me/+917083489465?text=Hi,%20i%20want%20to%20create%20id" target="_blank">
+                <mat-icon>chat</mat-icon>
+                WhatsApp support
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, praesentium.</p>
+        </div>
+    </div>
+    <div class="bottom_spacer">
+
+    </div>
+</section>
